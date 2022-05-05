@@ -19,6 +19,8 @@ elif [ ${ARCH} = arm ]; then
     BIN_SUFFIX="-armhf"
 elif [ ${ARCH} = s390x ]; then
     BIN_SUFFIX="-s390x"
+elif [ ${ARCH} = ppc64le ]; then
+    BIN_SUFFIX="-ppc64le"
 fi
 
 CMD_NAME="dist/artifacts/k3s${BIN_SUFFIX}"

@@ -76,6 +76,10 @@ if [ ${ARCH} = s390x ]; then
     export GOARCH="s390x"
 fi
 
+if [ ${ARCH} = ppc64le ]; then
+    export GOARCH="ppc64le"
+fi
+
 rm -f \
     bin/k3s-agent \
     bin/k3s-server \
