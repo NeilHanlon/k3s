@@ -9,6 +9,3 @@ fi
 
 ./package-cli
 ./package-image
-if [ -z "$SKIP_AIRGAP" ]; then
-    ./package-airgap
-fi
